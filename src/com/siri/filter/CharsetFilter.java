@@ -1,0 +1,24 @@
+package com.siri.filter;
+
+import javax.servlet.*;
+import java.io.IOException;
+
+public class CharsetFilter implements Filter{
+    private static String encoding;
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+
+    }
+
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+//        servletRequest.setCharacterEncoding();
+
+    }
+
+    @Override
+    public void destroy() {
+        encoding = null;
+
+    }
+}
